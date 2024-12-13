@@ -4,7 +4,7 @@ pipeline {
         stage("Clone Code") {
             steps {
                 echo "Cloning the code"
-                git url: "checkout scmGit(branches: [[name: '*/main']], extensions: [], userRemoteConfigs: [[credentialsId: 'githubtoken', url: 'https://github.com/Abdullah-dev-max/my-notes-app.git']])", branch: "main"
+                git url: "https://github.com/Abdullah-dev-max/my-notes-app.git", branch: "main"
             }
         }
         stage("Build") {
