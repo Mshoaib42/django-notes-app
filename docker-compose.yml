@@ -1,6 +1,6 @@
 version : "3.3"
 services :
   web :
-     image: ahmad762249//my-note-app
+     image:choudhryshoaib/my-note-app
      ports :
          - "8000:8000"
